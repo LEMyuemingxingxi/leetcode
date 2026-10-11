@@ -15,7 +15,11 @@
 | `question6.cpp` | 三数之和 |
 | `question7.cpp` | 接雨水 |
 | `question8.cpp` | 无重复字符的最长子串 |
-| `question9.cpp` | 待补充 |
+| `question9.cpp` | 找到字符串中所有字母异位词 |
+| `question10.cpp` | 和为 K 的子数组 |
+| `question11.cpp` | 滑动窗口最大值 |
+| `question12.cpp` | 最小覆盖子串 |
+| `question13.cpp` | 最大子数组和（待完成） |
 
 文件编号按照个人练习顺序排列，不对应 LeetCode 官方题号。
 代码为练习记录，部分解法可能尚未完成；通常使用 LeetCode 提供的 `Solution` 类运行环境。
