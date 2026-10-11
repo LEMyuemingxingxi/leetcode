@@ -19,7 +19,18 @@
 | `question10.cpp` | 和为 K 的子数组 |
 | `question11.cpp` | 滑动窗口最大值 |
 | `question12.cpp` | 最小覆盖子串 |
-| `question13.cpp` | 最大子数组和（待完成） |
+| `question13#solution1.cpp` | 最大子数组和：前缀和 |
+| `question13#solution2.cpp` | 最大子数组和：动态规划 |
+| `question13#solution3.cpp` | 最大子数组和：分治 |
+| `question14.cpp` | 合并区间 |
+| `question15#solution1.cpp` | 轮转数组：双端队列 |
+| `question15#solution2.cpp` | 轮转数组：三次翻转 |
+| `question15#solution3.cpp` | 轮转数组：环状替换 |
+| `question16#solution1.cpp` | 除自身以外数组的乘积：前后缀数组 |
+| `question16#solution2.cpp` | 除自身以外数组的乘积：优化空间 |
+| `question17#solution1.cpp` | 矩阵置零：行列标记数组 |
+| `question17#solution2.cpp` | 矩阵置零：原地标记 |
+| `question18.cpp` | 螺旋矩阵（待完成） |
 
 文件编号按照个人练习顺序排列，不对应 LeetCode 官方题号。
 代码为练习记录，部分解法可能尚未完成；通常使用 LeetCode 提供的 `Solution` 类运行环境。
