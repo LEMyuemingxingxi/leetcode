@@ -1,0 +1,16 @@
+# Local editor settings
+.vscode/
+.idea/
+
+# Build output
+build/
+*.exe
+*.out
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# Operating system files
+.DS_Store
+Thumbs.db
