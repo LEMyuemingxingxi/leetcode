@@ -28,9 +28,18 @@
 | `question15#solution3.cpp` | 轮转数组：环状替换 |
 | `question16#solution1.cpp` | 除自身以外数组的乘积：前后缀数组 |
 | `question16#solution2.cpp` | 除自身以外数组的乘积：优化空间 |
-| `question17#solution1.cpp` | 矩阵置零：行列标记数组 |
-| `question17#solution2.cpp` | 矩阵置零：原地标记 |
-| `question18.cpp` | 螺旋矩阵（待完成） |
+| `question17.cpp` | 缺失的第一个正数 |
+| `question18#solution1.cpp` | 矩阵置零：行列标记数组 |
+| `question18#solution2.cpp` | 矩阵置零：原地标记 |
+| `question19.cpp` | 螺旋矩阵 |
+| `question20.cpp` | 旋转图像 |
+| `question21.cpp` | 搜索二维矩阵 II |
+| `question22.cpp` | 相交链表 |
+| `question23.cpp` | 反转链表 |
+| `question24.cpp` | 回文链表 |
+| `question25.cpp` | 环形链表 |
+| `question26.cpp` | 环形链表 II |
+| `question27.cpp` | 合并两个有序链表（待完成） |
 
 文件编号按照个人练习顺序排列，不对应 LeetCode 官方题号。
 代码为练习记录，部分解法可能尚未完成；通常使用 LeetCode 提供的 `Solution` 类运行环境。
