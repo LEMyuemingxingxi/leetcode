@@ -44,12 +44,12 @@
 | `question29.cpp` | 删除链表的倒数第 N 个结点 |
 | `question30.cpp` | 两两交换链表中的节点 |
 | `question31.cpp` | K 个一组翻转链表 |
-| `question33.cpp` | 复制带随机指针的链表 |
-| `question34.cpp` | 排序链表 |
-| `question35.cpp` | 合并 K 个升序链表 |
-| `question36.cpp` | LRU 缓存 |
-| `question37.cpp` | 二叉树的中序遍历 |
-| `question38.cpp` | 二叉树的最大深度（待完成） |
+| `question32.cpp` | 复制带随机指针的链表 |
+| `question33.cpp` | 排序链表 |
+| `question34.cpp` | 合并 K 个升序链表 |
+| `question35.cpp` | LRU 缓存 |
+| `question36.cpp` | 二叉树的中序遍历 |
+| `question37.cpp` | 二叉树的最大深度 |
 
 文件编号按照个人练习顺序排列，不对应 LeetCode 官方题号。
 代码为练习记录，部分解法可能尚未完成；通常使用 LeetCode 提供的 `Solution` 类运行环境。
