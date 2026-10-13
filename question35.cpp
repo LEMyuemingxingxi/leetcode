@@ -1,44 +1,73 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-ListNode* MergeTwoLists(ListNode* a, ListNode* b){
-    if ((!a)||(!b))
-    {
-        return a ? a : b;
+struct Node {
+    int key, val;
+    Node *prev, *next;
+    Node(int k = 0, int v = 0) : key(k), val(v), prev(nullptr), next(nullptr) {}
+};
+
+class LRUCache {
+private:
+    int capacity;
+    int size;
+    Node *head;
+    Node *tail;
+    unordered_map<int, Node*> cache;
+
+    void removeNode(Node* node) {
+        node->prev->next = node->next;
+        node->next->prev = node->prev;
     }
 
-    ListNode* tail,head;
-    tail = &head;
-    while(a&&b){
-        if(a->val < b->val){
-            tail->next = a;
-            a = a->next;
-        }else{
-            tail->next = b;
-            b = b->next;
-        }
-        tail = tail->next;
+    void addToHead(Node* node) {
+        node->next = head->next;
+        node->prev = head;
+        head->next->prev = node;
+        head->next = node;
     }
 
-    tail->next = a ? a : b;
-    return head.next;
-}
-ListNode* merge(vector<ListNode*>& lists,int l,int r){
-    if(l==r) return lists[l];
-    if(l > r) return nullptr;
-    int mid = (l+r)/2;
-    return MergeTwoLists(merge(lists,l,mid),merge(lists,mid+1,r));
-}
-class Solution {
+    void moveToHead(Node* node) {
+        removeNode(node);
+        addToHead(node);
+    }
+
+    Node* removeTail() {
+        Node* node = tail->prev;
+        removeNode(node);
+        return node;
+    }
+
 public:
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
-        return merge(lists,0,lists.size()-1);
+    LRUCache(int capacity) : capacity(capacity), size(0) {
+        head = new Node();
+        tail = new Node();
+        head->next = tail;
+        tail->prev = head;
+    }
+    
+    int get(int key) {
+        if (cache.find(key) == cache.end()) {
+            return -1;
+        }
+        Node* node = cache[key];
+        moveToHead(node);
+        return node->val;
+    }
+    
+    void put(int key, int value) {
+        if (cache.find(key) != cache.end()) {
+            Node* node = cache[key];
+            node->val = value;
+            moveToHead(node);
+        } else {
+            Node* node = new Node(key, value);
+            cache[key] = node;
+            addToHead(node);
+            ++size;
+            if (size > capacity) {
+                Node* removed = removeTail();
+                cache.erase(removed->key);
+                delete removed;
+                --size;
+            }
+        }
     }
 };

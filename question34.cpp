@@ -8,14 +8,14 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-ListNode* MergeTwoList(ListNode* a, ListNode* b){
+ListNode* MergeTwoLists(ListNode* a, ListNode* b){
     if ((!a)||(!b))
     {
         return a ? a : b;
     }
 
-    ListNode dummy(0);
-    ListNode* tail = &dummy;
+    ListNode* tail,head;
+    tail = &head;
     while(a&&b){
         if(a->val < b->val){
             tail->next = a;
@@ -28,27 +28,17 @@ ListNode* MergeTwoList(ListNode* a, ListNode* b){
     }
 
     tail->next = a ? a : b;
-    return dummy.next;
+    return head.next;
 }
-
-ListNode* merge(ListNode* head) {
-    if (!head || !head->next) return head;
-
-    ListNode *slow = head, *fast = head->next;
-    while (fast && fast->next) {
-        slow = slow->next;
-        fast = fast->next->next;
-    }
-    ListNode* mid = slow->next;
-    slow->next = nullptr;
-    ListNode* left = merge(head);
-    ListNode* right = merge(mid);
-    return MergeTwoList(left, right);
+ListNode* merge(vector<ListNode*>& lists,int l,int r){
+    if(l==r) return lists[l];
+    if(l > r) return nullptr;
+    int mid = (l+r)/2;
+    return MergeTwoLists(merge(lists,l,mid),merge(lists,mid+1,r));
 }
-
 class Solution {
 public:
-    ListNode* sortList(ListNode* head) {
-        return merge(head);
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        return merge(lists,0,lists.size()-1);
     }
 };
