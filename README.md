@@ -49,7 +49,28 @@
 | `question34.cpp` | 合并 K 个升序链表 |
 | `question35.cpp` | LRU 缓存 |
 | `question36.cpp` | 二叉树的中序遍历 |
-| `question37.cpp` | 二叉树的最大深度 |
+| `question37#solution1.cpp` | 二叉树的最大深度：递归 |
+| `question37#solution2.cpp` | 二叉树的最大深度：层序遍历 |
+| `question38.cpp` | 翻转二叉树 |
+| `question39#solution1.cpp` | 对称二叉树：解法一 |
+| `question39#solution2.cpp` | 对称二叉树：递归比较 |
+| `question40.cpp` | 二叉树的直径 |
+| `question41.cpp` | 二叉树的层序遍历 |
+| `question42.cpp` | 将有序数组转换为二叉搜索树 |
+| `question43#solution1.cpp` | 验证二叉搜索树：上下界 |
+| `question43#solution2.cpp` | 验证二叉搜索树：中序遍历 |
+| `question44.cpp` | 二叉搜索树中第 K 小的元素 |
+| `question44(这个题目的复杂方法待定).cpp` | 二叉搜索树中第 K 小的元素：待完成解法 |
+| `question45.cpp` | 二叉树的右视图 |
+| `question46.cpp` | 二叉树展开为链表 |
+| `question47.cpp` | 从前序与中序遍历序列构造二叉树 |
+| `question48.cpp` | 空文件，待补充 |
+| `question49.cpp` | 空文件，待补充 |
+| `question50.cpp` | 空文件，待补充 |
+| `question51.cpp` | 岛屿数量 |
+| `question52.cpp` | 腐烂的橘子 |
+| `question53.cpp` | 课程表 |
+| `question54.cpp` | 空文件，待补充 |
 
 文件编号按照个人练习顺序排列，不对应 LeetCode 官方题号。
 代码为练习记录，部分解法可能尚未完成；通常使用 LeetCode 提供的 `Solution` 类运行环境。
