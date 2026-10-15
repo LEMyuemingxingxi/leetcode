@@ -70,7 +70,20 @@
 | `question51.cpp` | 岛屿数量 |
 | `question52.cpp` | 腐烂的橘子 |
 | `question53.cpp` | 课程表 |
-| `question54.cpp` | 空文件，待补充 |
+| `question54.cpp` | 实现 Trie（前缀树） |
+| `question55.cpp` | 全排列 |
+| `question56.cpp` | 子集 |
+| `question57.cpp` | 电话号码的字母组合 |
+| `question58.cpp` | 组合总和 |
+| `question59.cpp` | 括号生成 |
+| `question60.cpp` | 单词搜索 |
+| `question61.cpp` | 分割回文串 |
+| `question62.cpp` | N 皇后 |
+| `question63.cpp` | 搜索插入位置 |
+| `question64.cpp` | 搜索二维矩阵 |
+| `question65.cpp` | 在排序数组中查找元素的第一个和最后一个位置 |
+| `question66.cpp` | 搜索旋转排序数组 |
+| `question67.cpp` | 空文件，待补充 |
 
 文件编号按照个人练习顺序排列，不对应 LeetCode 官方题号。
 代码为练习记录，部分解法可能尚未完成；通常使用 LeetCode 提供的 `Solution` 类运行环境。
